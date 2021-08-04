@@ -30,11 +30,11 @@ nav ul li {
 /*nav maenu on the right as a vertically list with 50px gapping with each without underline*/
 a {
   text-decoration: none;
-  color: #555;
+  color: #4488dd;
 }
 
 a:hover {
-  color: #00bfff;
+  color: #09556e;
 }
 #content {
   position: relative;

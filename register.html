@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
+  <title>Registration </title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- icon  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -85,7 +85,7 @@ form,
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: #13c4ca;
+  background: #5f9ea0;
   border: none;
   border-radius: 5px;
 }
@@ -104,11 +104,7 @@ form,
   background: #dff0d8;
   border: 1px solid #3c763d;
   margin-bottom: 20px;
-}
-
-/* footer strat  */
-
-
+}ter start  */
 
 </style>
 <body>
@@ -130,93 +126,102 @@ form,
         </nav>
         
     </div>
-   
+
 </div>
   <div class="header">
-    <h2>Login</h2>
+    <h2>Register</h2>
   </div>
-     
-  <form method="post" action="login.php">
+    
+  <form method="post" action="register.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
-        <label>Username</label>
-        <input type="text" name="username" >
+      <label>Username</label>
+      <input type="text" name="username" value="">
+      <!-- <?php echo $username; ?>place of value --> 
     </div>
     <div class="input-group">
-        <label>Password</label>
-        <input type="password" name="password">
+      <label>Email</label>
+      <input type="email" name="email" value="">
+      <!-- <?php echo $email; ?> place of value -->
     </div>
     <div class="input-group">
-        <button type="submit" class="btn" name="login_user">Login</button>
+      <label>Password</label>
+      <input type="password" name="password_1">
+    </div>
+    <div class="input-group">
+      <label>Confirm password</label>
+      <input type="password" name="password_2">
+    </div>
+    <div class="input-group">
+      <button type="submit" class="btn" name="reg_user">Register</button>
     </div>
     <p>
-        Not yet a member? <a href="register.html">Sign up</a>
+        Already a member? <a href="account.html">Sign in</a>
     </p>
   </form>
-  
 
-   <div class ="footer">
-        <div class="container">
-            
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
+  <div class ="footer">
+    <div class="container">
+        
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h1 class="footer-title">Easy Life Store</h1>
+                <div>
+                    <span class="color_icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        43/c Chanmia Housing <br> Mohammadpur, Dhaka
+                    </span>
                     </div>
-                </div>
-                <div class="footer-col-2">
-                    <h1 class="footer-title">Easy Life Store</h1>
-                    <div>
-                        <span class="color_icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                            43/c Chanmia Housing <br> Mohammadpur, Dhaka
-                        </span>
-                        </div>
-                    <div>
-                        <span class="color_icon">
-                            <i class="far fa-envelope"></i>
-                             Support@easylife.com
-                        </span>
-                       </div>
-                    <div>
-                        <span class="color_icon">
-                            <i class="fas fa-phone"></i>
-                             0167173784*
-                        </span>
-                       </div>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                   <ul>
-                       <li>Coupons</li>
-                       <li>Blog Post</li>
-                       <li>Return Policy</li>
-                       <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                   <ul>
-                       <li>Facebook</li>
-                       <li>Twitter</li>
-                       <li>Instagram</li>
-                       <li>Youtube</li>
-                    </ul>
-                </div>
-                
+                <div>
+                    <span class="color_icon">
+                        <i class="far fa-envelope"></i>
+                         Support@easylife.com
+                    </span>
+                   </div>
+                <div>
+                    <span class="color_icon">
+                        <i class="fas fa-phone"></i>
+                         0167173784*
+                    </span>
+                   </div>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Return Policy</li>
+                   <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>Youtube</li>
+                </ul>
             </div>
             
-            <hr><!--horizontal line-->
-            <p class="copyright">Copyright 2021 - Easy Life Store <br> <span class="color_icon">Md Mahtab Uddin</span></p>
-            
         </div>
+        
+        <hr><!--horizontal line-->
+        <p class="copyright">Copyright 2021 - Easy Life Store <br> <span class="color_icon">Md Mahtab Uddin</span></p>
+        
     </div>
+</div>
 
-    <!-- ion-icon -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<!-- ion-icon -->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
   
 </body>

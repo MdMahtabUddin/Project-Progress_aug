@@ -20,15 +20,27 @@ let products = [
         inCart: 0
     },
     {
-        name: "Black backpack",
-        tag: "blackbackpack",
-        price: 2500,
-        inCart: 0
-    },
-    {
         name: "White Shirt",
         tag: "whiteshirt",
         price: 2000,
+        inCart: 0
+    },
+    {
+        name: "White shirt",
+        tag: "whitesmart",
+        price: 2000,
+        inCart: 0
+    },
+    {
+        name: "Female hand bag",
+        tag: "femalebag",
+        price: 3500,
+        inCart: 0
+    },
+    {
+        name: "Ladies Shoes",
+        tag: "ladiesshoes",
+        price: 3000,
         inCart: 0
     }
        
